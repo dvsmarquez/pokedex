@@ -40,7 +40,16 @@ python manage.py runserver
 
 Abra una pestaña en su navegador y vaya a la dirección [localhost:8000](http://localhost:8000) (o el puerto que haya indicado en el comando `runserver`).
 
-## LLenado de base de datos
+Desde la página inicial, podrá hacer peticiones de la forma:
+
+```url
+http://localhost:8000?name={pokemon_name}
+```
+
+Donde _pokemon_name_ es el nombre de algún pokémon. Si se encuentra registrado, se mostrará información
+acerca del pokémon junto con sus evoluciones.
+
+## Registro de pokémon
 
 Para obtener información de un pokémon desde el api de *PokeApi* ejecute el siguiente comando
 
